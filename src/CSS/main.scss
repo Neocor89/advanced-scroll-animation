@@ -1,5 +1,5 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
+@import "sass/utils/_typography";
+@import "sass/utils/_mixins";
+@import "sass/utils/_variables";
+@import "sass/components/_boxes";
