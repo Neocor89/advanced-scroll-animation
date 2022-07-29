@@ -1,0 +1,24 @@
+{
+  "name": "advanced-scroll-animation",
+  "version": "1.0.0",
+  "description": "scroll-animation",
+  "main": "index.js",
+  "scripts": {
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neocor89/advanced-scroll-animation.git"
+  },
+  "keywords": [
+    "scroll-animation",
+    "javascript",
+    "sass"
+  ],
+  "author": "Ben Devweb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neocor89/advanced-scroll-animation/issues"
+  },
+  "homepage": "https://github.com/Neocor89/advanced-scroll-animation#readme"
+}
