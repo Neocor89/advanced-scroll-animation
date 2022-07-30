@@ -1,0 +1,8 @@
+.box {
+  background: $blue-network;
+  color: $white;
+  @include basic-centered;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 400px;
+}

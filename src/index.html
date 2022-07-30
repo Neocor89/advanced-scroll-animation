@@ -8,32 +8,33 @@
   <!--
     :: Link CSS
   -->
-  <link rel="stylesheet" href="/CSS/main.css">
-  <!--
-    :: Link JS
-  -->
-  <script src="./JS/script.js" defer></script>
+  <link rel="stylesheet" href="../src/CSS/main.css">
   <!--
     :: Link GOOGLE FONT
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../public/favicon/personal-brand.png" type="image/x-icon">
 
-  <title>Advanced Scroll Animation</title>
+  <title>Advanced API Scroll Animation</title>
 </head>
 
 <body>
-  <section id="posts__boxes"></section>
-  <template id="template__boxes"></template>
-  <div class="box">
-    <p id="box__name"></p>
-    <p id="box__body"></p>
-    <img src="" alt="" class="box__img">
-    <!-- 
-    TODO nedd add in JS file the call API for boxes
-   -->
-  </div>
+  <section id="posts__boxes">Hello World</section>
+  <template id="template__boxes">
+    <div class="box">
+      <p id="box__title"></p>
+      <p id="box__content"></p>
+      <img src="" alt="" class="box__img">
+    </div>
+  </template>
+
+  <!--
+    :: Link JS
+  -->
+  <script src="/src/JS/script.js"></script>
 </body>
+
 
 </html>
