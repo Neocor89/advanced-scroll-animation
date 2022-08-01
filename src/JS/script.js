@@ -35,21 +35,21 @@ const postTemplate = document.querySelector("#template__boxes");
 
 const boxes = document.querySelectorAll(".box");
 
-window.addEventListener("scroll", checkBoxes)
+// window.addEventListener("scroll", checkBoxes)
 
 
 
-function checkBoxes() {
-  const triggerBottom = window.innerHeight / 4 * 4;
-  console.log(triggerBottom);
+// function checkBoxes() {
+//   const triggerBottom = window.innerHeight / 4 * 4;
+//   console.log(triggerBottom);
 
-  boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top
+//   boxes.forEach((box) => {
+//     const boxTop = box.getBoundingClientRect().top
 
-    if(boxTop < triggerBottom) {
-      box.classList.add('show')
-    } else {
-      box.classList.remove('show')
-    }
-  })
-}
+//     if(boxTop < triggerBottom) {
+//       box.classList.add('show')
+//     } else {
+//       box.classList.remove('show')
+//     }
+//   })
+// }

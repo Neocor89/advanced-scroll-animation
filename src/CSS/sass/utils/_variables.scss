@@ -6,6 +6,7 @@ $fs-2: 1.4rem;
 $fs-3: 1.2rem;
 $fs-4: 1.1rem;
 $fs-5: 0.9rem;
+$fs-title: clamp(30px,5vw,75px);
 
 
 
@@ -24,4 +25,12 @@ $white:#ffffff;
 /*----
 :: Font Family
 ----*/
-$font-primary: 'Roboto', sans-serif;;
+$font-primary: 'Roboto', sans-serif;
+$font-fun: 'Mouse Memoirs', sans-serif;
+
+/*----
+:: Font Family
+----*/
+$fw-bold: 900;
+$fw-semi-bold: 700;
+$fw-semi-normal: 500;

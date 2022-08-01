@@ -10,10 +10,12 @@
 /*----
 :: Font Family
 ----*/
+/*----
+:: Font Family
+----*/
 body {
-  background: hsl(0deg, 0%, 100%);
-  background: radial-gradient(circle, hsl(0deg, 0%, 100%) 0%, rgb(255, 255, 255) 100%);
-  background: -webkit-radial-gradient(circle, hsl(0deg, 0%, 100%) 0%, rgb(255, 252, 247) 100%);
+  background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
+  background-blend-mode: overlay, overlay, overlay, normal;
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
@@ -36,27 +38,43 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 400px;
-  height: 400px;
+  height: auto;
   margin: 15px;
+  padding: 15px 5px 20px 5px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(200px);
-  transition: transform 0.4s ease;
 }
 
-.box.show {
-  transform: translateX(0);
+.box__title {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 90%;
 }
 
-.box:nth-of-type(even) {
-  transform: translateX(-200px);
+.title {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+.box__content {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 h1.headline__animation {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mouse Memoirs", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.6rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: clamp(30px, 5vw, 75px);
+  font-weight: bold;
   margin: 25px 0 45px 0;
+  letter-spacing: 1px;
+  background-image: linear-gradient(45deg, crimson, #fca829);
+  color: transparent;
 }/*# sourceMappingURL=main.css.map */

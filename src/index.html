@@ -9,13 +9,20 @@
     :: Link CSS
   -->
   <link rel="stylesheet" href="../src/CSS/main.css">
+  <link rel="shortcut icon" href="/public/favicon/official-favicon-brand.png" type="image/x-icon">
   <!--
-    :: Link GOOGLE FONT
+    :: Link GOOGLE ROBOTO FONT
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="../public/favicon/personal-brand.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
+    rel="stylesheet">
+  <!--
+    :: Link GOOGLE MOUSE MENOIRS FONT
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
 
   <title>Advanced API Scroll Animation</title>
 </head>
@@ -26,8 +33,10 @@
   </section>
   <template id="template__boxes">
     <div class="box">
-      <p id="box__title"></p>
-      <p id="box__content"></p>
+      <div class="box__title">
+        <p id="box__title" class="title"></p>
+      </div>
+      <p id="box__content" class="box__content"></p>
       <img src="" alt="" class="box__img">
     </div>
   </template>
