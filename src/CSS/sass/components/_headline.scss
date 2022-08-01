@@ -1,0 +1,7 @@
+h1.headline__animation {
+  font-family: $font-primary;
+  @include basic-centered;
+  // TODO => Select another font family for title
+  font-size: $fs-1;
+  margin: 25px 0 45px 0;
+}
