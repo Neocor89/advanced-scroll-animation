@@ -8,7 +8,7 @@ const postTemplate = document.querySelector("#template__boxes");
   let i = 0;
   jsonData.forEach((getValue) => {
     i++;
-    if (i < 11) {
+    if (i < 21) {
       const title = getValue.title;
       const body = getValue.body;
       fetch("https://unsplash.it/300/200")
