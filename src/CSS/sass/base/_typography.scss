@@ -2,7 +2,4 @@
 body {
   @include body-gradient;
   font-family: $font-primary;
-  @include basic-centered;
-  margin: 0;
- 
 }

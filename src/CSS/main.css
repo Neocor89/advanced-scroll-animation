@@ -16,10 +16,6 @@
 body {
   background-image: linear-gradient(314deg, rgb(178, 252, 228), rgb(253, 255, 251));
   font-family: "Roboto", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
 }
 
 *, *::before, *::after {
@@ -37,13 +33,11 @@ body {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 400px;
   transform: translateY(-10px);
   opacity: 0;
   -webkit-animation: fade-in 0.5s ease-in-out forwards;
           animation: fade-in 0.5s ease-in-out forwards;
   height: auto;
-  margin: 15px;
   margin-bottom: 35px;
   padding: 15px 5px 20px 5px;
   border-radius: 10px;
@@ -68,23 +62,34 @@ body {
   display: block;
   text-align: center;
   width: 90%;
-}
-
-.title {
+  max-width: 91%;
   font-size: 1.8rem;
-  padding: 10px 0;
   font-family: "Mouse Memoirs", sans-serif;
+  padding: 10px 0;
 }
 
+/* 
++ After Changes
+.title {
+  font-size: $fs-title-card;
+  padding: 10px 0;
+  font-family: $font-fun;
+}
+*/
 .box__content {
   margin: 0 auto;
   display: block;
-  width: 95%;
+  width: 98%;
   text-align: center;
   padding: 5px 0 15px 0;
   font-family: "Roboto", sans-serif;
 }
 
+/* 
+TODO =>
+  : Adatation Title 
+  : media queries includes in mixins
+*/
 .box__img {
   width: 99%;
   margin: 0 auto;
@@ -92,7 +97,8 @@ body {
 }
 
 .box__watcher {
-  background: #000;
+  height: 50px;
+  width: 50px;
 }
 
 /* 
@@ -103,15 +109,27 @@ body {
 : gap: 10px;
 
 */
-h1.headline__animation {
+#header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-auto-rows: auto;
+  gap: 15px;
+}
+
+/* 
+TODO =>
+  : Adatation boxes sizes 
+  : media queries includes in mixins
+*/
+h1.headline {
   font-family: "Mouse Memoirs", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: clamp(30px, 4vw, 75px);
   font-weight: bold;
+  z-index: 2;
   margin: 25px 0 45px 0;
   letter-spacing: 1px;
   color: transparent;

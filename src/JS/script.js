@@ -1,4 +1,4 @@
-const postSection = document.querySelector("#section-title");
+const postSection = document.querySelector("#header");
 const postTemplate = document.querySelector("#template__boxes");
 
 (async () => {
@@ -7,8 +7,7 @@ const postTemplate = document.querySelector("#template__boxes");
   const jsonData = await fetchData.json();
   let i = 0;
   jsonData.forEach((getValue) => {
-    i++;
-    if (i < 21) {
+    const addContent = () => {
       const title = getValue.title;
       const body = getValue.body;
       fetch("https://unsplash.it/300/200")
@@ -29,29 +28,14 @@ const postTemplate = document.querySelector("#template__boxes");
         .catch((err) => {
           console.error(err);
         });
-    }
+    };
+    const watcher = document.querySelector(".box__watcher");
+
+    const handleIntersect = (entries) => {
+      if (entries[0].isIntersecting) {
+        addContent();
+      }
+    };
+    new IntersectionObserver(handleIntersect).observe(watcher);
   });
 })();
-
-const boxes = document.querySelector("h1");
-   
-const watcher = document.querySelector(".box__watcher");
-
-
-const handleIntersect = entries => {
-  console.log(entries);
-}
-const newObserver = new IntersectionObserver(handleIntersect)
-newObserver.observe(watcher);
-
-// window.addEventListener('scroll', () => {
-  
-//   const { scrollTop, clientHeight } = document.documentElement;
-//   const topBoxes = boxs.getBoundingClientRect().top;
-//   console.log(scrollTop);
-//   if(scrollTop > (scrollTop + topBoxes).toFixed() - clientHeight * 0.50) {
-//     boxs.classList.add('active')
-//   } else {
-//     boxs.classList.remove('active')
-//   }
-// })

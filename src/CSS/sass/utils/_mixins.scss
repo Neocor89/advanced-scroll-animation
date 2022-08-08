@@ -18,7 +18,7 @@
 /* -------------------
  + Responsive Mixins +
 ------------------- */
-// TODO Add breakpoints and create this file
+
 
 @mixin phone-screen {
   @media screen and (max-width: map-get($breakpoints, md-screen-size1)) {

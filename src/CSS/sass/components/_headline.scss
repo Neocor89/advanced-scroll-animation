@@ -1,12 +1,15 @@
-h1.headline__animation {
+h1.headline {
   font-family:$font-fun;
-  @include basic-centered;
+  display: flex;
+  justify-content: center;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: $fs-title;
   font-weight: bold;
+  z-index: 2;
   margin: 25px 0 45px 0;
   letter-spacing: 1px;
   color: transparent;
   background-image: linear-gradient(315deg, rgb(128,170,157),rgb(85,91,110));
 }
+

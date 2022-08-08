@@ -1,0 +1,12 @@
+#header {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-auto-rows: auto;
+  gap: 15px;
+}
+
+/* 
+TODO =>
+  : Adatation boxes sizes 
+  : media queries includes in mixins
+*/ 

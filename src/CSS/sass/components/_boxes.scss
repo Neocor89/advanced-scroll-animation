@@ -4,12 +4,10 @@
   @include basic-centered;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 400px;
   transform: translateY(-10px);
   opacity: 0;
   animation: fade-in 0.5s ease-in-out forwards;
   height: auto;
-  margin: 15px;
   margin-bottom: 35px;
   padding: 15px 5px 20px 5px;
   border-radius: 10px;
@@ -28,23 +26,35 @@
   display: block;
   text-align: center;
   width: 90%;
+  max-width: 91%;
+  font-size: $fs-title-card;
+  font-family: $font-fun;
+  padding: 10px 0;
 }
 
+/* 
++ After Changes
 .title {
   font-size: $fs-title-card;
   padding: 10px 0;
   font-family: $font-fun;
-
 }
+*/
 
 .box__content {
   margin: 0 auto;
   display: block;
-  width: 95%;
+  width: 98%;
   text-align: center;
   padding: 5px 0 15px 0;
   font-family: $font-primary;
 }
+
+/* 
+TODO =>
+  : Adatation Title 
+  : media queries includes in mixins
+*/ 
 
 .box__img {
   width: 99%;
@@ -53,8 +63,8 @@
 }
 
 .box__watcher {
-
-  background: #000;
+  height: 50px;
+  width: 50px;
 }
 
 /* 
