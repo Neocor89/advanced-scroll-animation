@@ -14,8 +14,7 @@
 :: Font Family
 ----*/
 body {
-  background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%, rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%, rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%, rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%, rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%, rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%, rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%), linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
-  background-blend-mode: overlay, overlay, overlay, normal;
+  background-image: linear-gradient(314deg, rgb(178, 252, 228), rgb(253, 255, 251));
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
@@ -39,6 +38,10 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 400px;
+  transform: translateY(-10px);
+  opacity: 0;
+  -webkit-animation: fade-in 0.5s ease-in-out forwards;
+          animation: fade-in 0.5s ease-in-out forwards;
   height: auto;
   margin: 15px;
   margin-bottom: 35px;
@@ -47,6 +50,19 @@ body {
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
+@-webkit-keyframes fade-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .box__title {
   margin: 0 auto;
   display: block;
@@ -75,6 +91,18 @@ body {
   border-radius: 5px 5px 8px 8px;
 }
 
+.box__watcher {
+  background: #000;
+}
+
+/* 
++ After Grid container
+: display: grid;
+: grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+: grid-auto-rows: 150px;
+: gap: 10px;
+
+*/
 h1.headline__animation {
   font-family: "Mouse Memoirs", sans-serif;
   display: flex;
@@ -82,9 +110,10 @@ h1.headline__animation {
   align-items: center;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: clamp(30px, 5vw, 75px);
+  font-size: clamp(30px, 4vw, 75px);
   font-weight: bold;
   margin: 25px 0 45px 0;
   letter-spacing: 1px;
-  color: #555b6e;
+  color: transparent;
+  background-image: linear-gradient(315deg, rgb(128, 170, 157), rgb(85, 91, 110));
 }/*# sourceMappingURL=main.css.map */

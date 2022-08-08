@@ -33,23 +33,25 @@ const postTemplate = document.querySelector("#template__boxes");
   });
 })();
 
-const boxes = document.querySelectorAll(".box");
+const boxes = document.querySelector("h1");
+   
+const watcher = document.querySelector(".box__watcher");
 
-// window.addEventListener("scroll", checkBoxes)
 
+const handleIntersect = entries => {
+  console.log(entries);
+}
+const newObserver = new IntersectionObserver(handleIntersect)
+newObserver.observe(watcher);
 
-
-// function checkBoxes() {
-//   const triggerBottom = window.innerHeight / 4 * 4;
-//   console.log(triggerBottom);
-
-//   boxes.forEach((box) => {
-//     const boxTop = box.getBoundingClientRect().top
-
-//     if(boxTop < triggerBottom) {
-//       box.classList.add('show')
-//     } else {
-//       box.classList.remove('show')
-//     }
-//   })
-// }
+// window.addEventListener('scroll', () => {
+  
+//   const { scrollTop, clientHeight } = document.documentElement;
+//   const topBoxes = boxs.getBoundingClientRect().top;
+//   console.log(scrollTop);
+//   if(scrollTop > (scrollTop + topBoxes).toFixed() - clientHeight * 0.50) {
+//     boxs.classList.add('active')
+//   } else {
+//     boxs.classList.remove('active')
+//   }
+// })
